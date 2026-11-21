@@ -182,6 +182,27 @@
  #recebe .receive-card p{font-size:.78rem}
 }
 
+
+/* Nova seção prática: mostrar ferramentas reais, não apenas capas */
+.practical-showcase{background:linear-gradient(180deg,#f7f3eb 0%,#f0eadf 100%);padding:76px 0 82px}
+.practical-showcase .section-intro{max-width:820px;margin:0 auto 36px}
+.practical-showcase .section-intro h2{max-width:780px;margin-left:auto;margin-right:auto}
+.practical-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:1160px;margin:0 auto}
+.practical-card{background:#fffdf8;border:1px solid #ded3c1;border-radius:14px;overflow:hidden;box-shadow:0 12px 28px rgba(34,45,39,.07);display:flex;flex-direction:column}
+.practical-image{background:#e8e0d1;padding:14px;overflow:hidden}
+.practical-image img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:8px;box-shadow:0 8px 22px rgba(27,43,37,.12)}
+.practical-copy{padding:25px 28px 29px}
+.practical-copy .visual-tag{display:inline-block;margin-bottom:12px}
+.practical-copy h3{font-size:1.65rem;line-height:1.18;color:var(--pine);margin:0 0 12px}
+.practical-copy p{font-size:.98rem;line-height:1.65;color:var(--muted);margin:0 0 15px}
+.practical-copy ul{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.practical-copy li{position:relative;padding-left:25px;color:#304a43;font-size:.9rem;line-height:1.5}
+.practical-copy li:before{content:"✓";position:absolute;left:0;top:0;color:#b58a4b;font-weight:800;font-size:1.05rem}
+.practical-note{max-width:900px;margin:25px auto 0;padding:17px 22px;border-left:4px solid #b58a4b;background:#e5ece4;color:#3e5b4d;font-size:.92rem;line-height:1.6}
+.practical-note strong{color:#173d3a}
+@media(max-width:850px){.practical-grid{grid-template-columns:1fr;max-width:680px}.practical-image{padding:12px}.practical-copy{padding:22px}.practical-copy h3{font-size:1.45rem}}
+@media(max-width:520px){.practical-showcase{padding:52px 0 58px}.practical-showcase .section-intro{text-align:left}.practical-copy{padding:19px}.practical-copy p{font-size:.9rem}.practical-copy li{font-size:.86rem}.practical-note{padding:14px 16px}}
+
 </style>
 </head>
 
@@ -200,7 +221,14 @@
 <div class="pain-point pain-point-three"><span class="pain-point-number">03</span><div><strong>Seu corpo para. Sua mente continua trabalhando.</strong><p>Mesmo quando existe tempo para descansar, as tarefas continuam na sua cabeça e a culpa não deixa você aproveitar.</p></div></div>
 </div><div class="pain-side-action"><span>Se você se reconheceu nesses sinais, existe um caminho para começar a mudar esse ciclo.</span><a href="#oferta">QUERO CONHECER O MÉTODO <b>→</b></a></div></div></div><p class="pain-close">Talvez você não precise aprender a fazer mais. <em>Talvez precise parar de carregar tudo como se dependesse de você.</em></p></div></section>
 <!-- 3. O QUE VAI RECEBER: RESUMO VISUAL E DIRETO -->
-<section class="section" id="recebe"><div class="wrap"><div class="center section-intro"><div class="eyebrow">O que você vai receber</div><h2 class="serif">Dois materiais. Uma sequência simples: compreender e praticar.</h2><p class="lead">Escolha um material ou reúna os dois no combo.</p></div><div class="receive-grid"><article class="receive-card"><img src="assets/capa-ebook.png" alt="Capa do e-book A Ansiedade Produtiva"><div><span class="visual-tag">GUIA PRÁTICO · 5 CAPÍTULOS</span><h3 class="serif">E-book A Ansiedade Produtiva</h3><p>Entenda os padrões de sobrecarga e conheça ferramentas para reorganizar prioridades e limites.</p></div></article><article class="receive-card"><div class="mini-planner" role="img" aria-label="Capa ilustrativa do Planner de 30 Dias"><span>STRATEGY828 BOOKS</span><b>PLANNER<br>DE 30 DIAS</b><i>PERCEBER · REDUZIR<br>LIMITAR · RECUPERAR<br>MANTER</i></div><div><span class="visual-tag">PLANNER GUIADO · 30 DIAS</span><h3 class="serif">Planner de 30 Dias</h3><p>Um percurso preenchível com exercícios diários, revisões por fase e ferramentas para transformar observações em decisões práticas.</p></div></article></div><div class="center" style="margin-top:24px"><a class="btn dark" href="#oferta">Ver as três opções →</a></div></div></section>
+<section class="section practical-showcase" id="recebe"><div class="wrap">
+<div class="center section-intro"><div class="eyebrow">Por dentro dos materiais</div><h2 class="serif">Não é só entender o que acontece. É saber por onde começar.</h2><p class="lead">Veja exemplos visuais dos conteúdos e das ferramentas que você vai encontrar em cada material.</p></div>
+<div class="practical-grid">
+<article class="practical-card practical-ebook"><div class="practical-image"><img src="assets/ebook-pratica.svg" alt="Ilustração editorial do conteúdo do e-book: auditoria do padrão de funcionamento, mapeamento de gargalos e protocolo de 72 horas"></div><div class="practical-copy"><span class="visual-tag">E-BOOK · COMPREENDER E REORGANIZAR</span><h3 class="serif">Entenda o ciclo que mantém você sempre em alerta.</h3><p>O e-book conduz você da identificação do padrão de sobrecarga à construção de alternativas mais sustentáveis.</p><ul><li>Auditoria do seu padrão de funcionamento.</li><li>Mapeamento de gargalos e redução de decisões repetitivas.</li><li>Protocolo de 72 horas para começar a reorganizar o que está ao seu alcance.</li><li>Estratégias para estabelecer limites, recuperar espaço e manter mudanças possíveis.</li></ul></div></article>
+<article class="practical-card practical-planner"><div class="practical-image"><img src="assets/planner-pratica.svg" alt="Exemplo ilustrado de uma atividade real do Planner: rever um limite sem culpa, com exemplo preenchido, perguntas e termômetro de energia e tensão"></div><div class="practical-copy"><span class="visual-tag">PLANNER · APLICAR NO DIA A DIA</span><h3 class="serif">Transforme reflexão em pequenas decisões práticas.</h3><p>Durante 30 dias, você acompanha um percurso dividido em cinco fases: Perceber, Reduzir, Limitar, Recuperar e Manter.</p><ul><li>Propostas diárias com orientação e exemplo preenchido.</li><li>Perguntas para registrar situações e escolher uma próxima ação possível.</li><li>Termômetro diário de energia e tensão percebidas.</li><li>Revisões ao final de cada fase e painel para acompanhar tendências.</li><li>Menu de microrrecuperações e plano de continuidade.</li></ul></div></article>
+</div><div class="practical-note"><strong>Você não precisa fazer tudo de uma vez.</strong> O percurso foi pensado para caber na vida real, com espaço para adaptar o ritmo e escolher ações possíveis.</div>
+<div class="center" style="margin-top:28px"><a class="btn dark" href="#oferta">VER AS TRÊS OPÇÕES →</a></div>
+</div></section>
 <!-- 4. BENEFÍCIOS PRÁTICOS -->
 <section class="section cream"><div class="wrap"><div class="center"><div class="eyebrow">O que pode começar a mudar</div><h2 class="serif">O objetivo não é preencher sua agenda. É recuperar clareza para decidir o que merece sua energia.</h2><p class="lead">Use as reflexões e ferramentas para reconhecer prioridades, observar interrupções, estabelecer limites possíveis e reservar espaço para descanso.</p></div><div class="three"><article class="tile"><b>Compreenda seus padrões</b><p>Identifique o que mantém a sensação de urgência e sobrecarga.</p></article><article class="tile"><b>Escolha suas prioridades</b><p>Observe interrupções, tarefas e limites que merecem atenção.</p></article><article class="tile"><b>Pratique mudanças possíveis</b><p>Use pequenas ações para construir uma rotina mais sustentável.</p></article></div><div class="benefit-band"><div><b>Compreender</b><span>Reconhecer padrões que mantêm a sensação de urgência constante.</span></div><div><b>Reorganizar</b><span>Observar prioridades, interrupções e limites possíveis.</span></div><div><b>Praticar</b><span>Registrar pequenas mudanças ao longo de cinco fases.</span></div></div></div></section>
 
