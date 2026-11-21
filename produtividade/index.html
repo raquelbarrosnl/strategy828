@@ -114,6 +114,42 @@
 .offer-card.best .tag{margin-top:3px}
 .offer-card.best .saving{display:none}
 @media(max-width:900px){.offer-card .combo-pricing{height:62px;min-height:62px}}
+
+/* Red seal overlaps the Combo product image */
+.offer-card.best{overflow:visible}
+.offer-card.best .combo-visual{position:relative;overflow:visible;isolation:isolate}
+.combo-bonus-seal{position:absolute;z-index:5;top:-22px;right:-19px;width:112px;height:112px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;text-align:center;color:#fff;background:radial-gradient(circle at 35% 28%,#d94348 0%,#bd202b 55%,#981722 100%);border:4px double #f5d7a0;box-shadow:0 5px 13px rgba(95,14,21,.3);transform:rotate(9deg);outline:1px solid #a81e28}
+.combo-bonus-seal:before,.combo-bonus-seal:after{content:"";position:absolute;inset:5px;border:1px dashed rgba(255,238,205,.8);border-radius:50%;pointer-events:none}
+.combo-bonus-seal span{font:700 1.75rem/1 var(--serif);color:#fff3d9}
+.combo-bonus-seal strong{font:800 .7rem/1.05 var(--sans);letter-spacing:.055em;color:#fff;text-transform:uppercase}
+.offer-card.best .combo-visual{min-height:205px}
+.offer-card.best .mock-book.small{transform:translateX(-5px) scale(.96)}
+.offer-card.best .mock-planner.small{transform:translateX(5px) scale(.96)}
+.offer-card .price{font-family:var(--serif);font-size:clamp(2.45rem,3vw,2.9rem);font-weight:700;letter-spacing:-.055em;color:#102f30;text-shadow:0 1px 0 rgba(255,255,255,.7);white-space:nowrap}
+.offer-card .price .currency{font-family:var(--sans);font-size:.42em;font-weight:800;letter-spacing:-.02em;vertical-align:.35em}
+.offer-card .combo-pricing{min-height:86px;height:86px}
+.offer-card .combo-pricing .old-price{font-size:.84rem;color:#7c7168;margin-bottom:3px}
+.offer-card.best .combo-pricing .price{font-size:2.8rem;color:#102f30}
+.offer-card .sub{min-height:82px}
+.offer-card .offer-visual{min-height:205px}
+.offer-card .mock-book img{max-height:190px}
+.offer-card.best .combo-visual{min-height:205px}
+.offer-card.best .combo-visual .mock-book img{max-height:170px}
+.bonus-section{background:#f0eadf;padding:66px 0 72px}
+.bonus-heading{max-width:760px;margin:0 auto 30px;text-align:center}
+.bonus-kicker{display:inline-block;color:#a52b32;font-size:.7rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;margin-bottom:10px}
+.bonus-heading h2{margin:0 0 12px;color:#183b39}
+.bonus-heading h2 em{color:#a52b32;font-style:normal}
+.bonus-heading>p{max-width:620px;margin:0 auto;color:#5c6762;font-size:1rem;line-height:1.65}
+.bonus-clean-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;max-width:1050px;margin:0 auto}
+.bonus-clean-card{background:#fffdf8;border:1px solid #ded4c5;border-top:4px solid #b52a33;border-radius:8px;padding:22px 22px 24px;min-height:225px;box-shadow:0 5px 16px rgba(43,39,30,.035)}
+.bonus-clean-top{display:flex;align-items:center;gap:10px;margin-bottom:22px}
+.bonus-clean-top span{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:#b52a33;color:white;font:700 1rem var(--serif)}
+.bonus-clean-top small{font-size:.64rem;letter-spacing:.13em;font-weight:800;color:#a52b32}
+.bonus-clean-card h3{font:600 1.25rem/1.25 var(--serif);color:#173b39;margin:0 0 10px}
+.bonus-clean-card p{font-size:.9rem;line-height:1.6;color:#59645f;margin:0}
+.bonus-eligibility{max-width:760px;margin:24px auto 18px;text-align:center;color:#8d2b31;font-size:.83rem;font-weight:700}
+@media(max-width:760px){.combo-bonus-seal{width:91px;height:91px;top:-17px;right:-10px}.combo-bonus-seal span{font-size:1.45rem}.combo-bonus-seal strong{font-size:.61rem}.offer-card.best .combo-visual{min-height:180px}.offer-card .price{font-size:2.45rem}.bonus-clean-grid{grid-template-columns:1fr;gap:12px}.bonus-clean-card{min-height:0;padding:19px}.bonus-clean-top{margin-bottom:13px}.bonus-heading{text-align:left}.bonus-heading>p{margin-left:0}}
 </style>
 </head>
 
@@ -143,14 +179,18 @@
 <section class="offer" id="oferta"><div class="wrap center"><div class="eyebrow">Condição exclusiva de lançamento · válida por 7 dias</div><h2 class="serif">Comece a reorganizar sua rotina com um plano claro.</h2><p class="lead">Escolha a ferramenta para o seu momento. No Combo Completo, você reúne compreensão, prática e três recursos extras para apoiar sua jornada.</p><div class="offers">
 <article class="offer-card"><div class="offer-visual"><div class="mock-book"><img src="assets/capa-ebook.png" alt="E-book A Ansiedade Produtiva apresentado em tablet"><span>E-BOOK DIGITAL · 72 PÁGINAS</span></div></div><span class="tag">Opção 1 · E-book</span><h3>A Ansiedade Produtiva</h3><div class="offer-note">72 páginas · 5 capítulos</div><p class="sub">Um guia prático para reconhecer padrões de sobrecarga, reorganizar prioridades e estabelecer limites.</p><div class="combo-pricing single-pricing"><div class="price"><span class="currency">R$</span> 19,99</div></div><ul><li>Guia digital com 72 páginas</li><li>5 capítulos estruturados</li><li>Exercícios e ferramentas práticas</li><li>Apêndices e referências</li></ul><a class="btn" href="https://pay.kiwify.com.br/7U5PTqS" target="_blank" rel="noopener">Comprar e-book →</a></article>
 <article class="offer-card"><div class="offer-visual"><div class="mock-planner"><span>STRATEGY828 BOOKS</span><b>PLANNER<br>DE 30 DIAS</b><svg viewBox="0 0 120 62" aria-hidden="true"><rect x="8" y="4" width="104" height="54" rx="5" fill="#f7f2e8"/><path d="M22 18h76M22 30h76M22 42h55" stroke="#c9b58d" stroke-width="3" stroke-linecap="round"/><path d="m15 17 3 3 5-6m-8 18 3 3 5-6" fill="none" stroke="#b38b4b" stroke-width="2"/></svg><i>PERCEBER · REDUZIR · LIMITAR<br>RECUPERAR · MANTER</i></div></div><span class="tag">Opção 2 · Planner</span><h3>Planner de 30 Dias</h3><div class="offer-note">35 páginas · 30 dias</div><p class="sub">Um percurso guiado para registrar observações e transformar reflexões em pequenas ações.</p><div class="combo-pricing single-pricing"><div class="price"><span class="currency">R$</span> 9,90</div></div><ul><li>Planner digital interativo para acompanhar sua jornada</li><li>30 dias de atividades e reflexões</li><li>5 fases: Perceber, Reduzir, Limitar, Recuperar e Manter</li><li>Espaço para registros e acompanhamento</li></ul><a class="btn" href="https://pay.kiwify.com.br/N1R46Eu" target="_blank" rel="noopener">Comprar planner →</a></article>
-<article class="offer-card best"><div class="offer-visual combo-visual"><div class="mock-book small"><img src="assets/capa-ebook.png" alt="E-book A Ansiedade Produtiva em tablet"></div><div class="mock-planner small"><span>STRATEGY828</span><b>PLANNER<br>30 DIAS</b><i>5 FASES</i></div></div><div class="combo-bonus-stamp"><span class="stamp-star">★</span><span><strong>3 BÔNUS EXCLUSIVOS</strong><small>INCLUSOS NO COMBO COMPLETO</small></span></div><span class="tag">Opção 3 · Melhor custo-benefício</span><h3>Combo Completo</h3><div class="offer-note">130 páginas · 5 arquivos digitais</div><p class="sub">E-book + Planner de 30 Dias + 3 bônus exclusivos: cinco materiais digitais em um único pacote.</p><div class="combo-pricing"><div class="old-price">De R$ 29,90</div><div class="price"><span class="currency">R$</span> 24,99</div></div><ul><li>E-book A Ansiedade Produtiva · 72 páginas</li><li>Planner de 30 Dias · 35 páginas</li><li>Bônus 1: Checklist dos 10 Ladrões da sua Energia</li><li>Bônus 2: Cartões de Limites — Como Dizer Não sem Culpa</li><li>Bônus 3: Ritual de 15 Minutos para Encerrar o Dia</li></ul><a class="btn" href="https://pay.kiwify.com.br/5ndZMvP" target="_blank" rel="noopener">Quero o combo completo →</a></article>
+<article class="offer-card best"><div class="offer-visual combo-visual"><div class="mock-book small"><img src="assets/capa-ebook.png" alt="E-book A Ansiedade Produtiva em tablet"></div><div class="mock-planner small"><span>STRATEGY828</span><b>PLANNER<br>30 DIAS</b><i>5 FASES</i></div><div class="combo-bonus-seal"><span>3</span><strong>BÔNUS<br>EXCLUSIVOS</strong></div></div><span class="tag">Opção 3 · Melhor custo-benefício</span><h3>Combo Completo</h3><div class="offer-note">130 páginas · 5 arquivos digitais</div><p class="sub">E-book + Planner de 30 Dias + 3 bônus exclusivos: cinco materiais digitais em um único pacote.</p><div class="combo-pricing"><div class="old-price">De R$ 29,90</div><div class="price"><span class="currency">R$</span> 24,99</div></div><ul><li>E-book A Ansiedade Produtiva · 72 páginas</li><li>Planner de 30 Dias · 35 páginas</li><li>Bônus 1: Checklist dos 10 Ladrões da sua Energia</li><li>Bônus 2: Cartões de Limites — Como Dizer Não sem Culpa</li><li>Bônus 3: Ritual de 15 Minutos para Encerrar o Dia</li></ul><a class="btn" href="https://pay.kiwify.com.br/5ndZMvP" target="_blank" rel="noopener">Quero o combo completo →</a></article>
 </div><p class="offer-foot">OFERTA EXCLUSIVA DE LANÇAMENTO: válida por apenas 7 dias a partir da publicação da campanha. Combo com 5 arquivos digitais (130 páginas no total). Acesso imediato após a confirmação do pagamento. Não há envio físico.</p></div></section>
 
-<section class="section cream bonus-section" id="bonus"><div class="wrap center"><div class="bonus-exclusive-label"><span class="bonus-label-kicker">PRESENTE ESPECIAL</span><strong>3 BÔNUS EXCLUSIVOS</strong><span>LIBERADOS SOMENTE NA COMPRA DO COMBO COMPLETO · R$ 24,99</span></div><div class="eyebrow">Oferta exclusiva · não incluídos nas opções individuais</div><h2 class="serif">Leve os 3 bônus junto com o Combo Completo.</h2><p class="lead">Ao escolher o Combo de R$ 24,99, você recebe o e-book, o Planner de 30 Dias e mais três ferramentas práticas — sem custo adicional. Os bônus não acompanham a compra individual do e-book ou do planner.</p><div class="three bonus-grid">
-<article class="tile bonus-product"><div class="bonus-cover bonus-cover-one"><span>STRATEGY828 BOOKS · BÔNUS 01</span><b>OS 10 LADRÕES<br>DA SUA ENERGIA</b><small>CHECKLIST DE AUTO-OBSERVAÇÃO</small></div><span class="bonus-number">BÔNUS 01 · 9 PÁGINAS</span><b>Os 10 Ladrões da sua Energia</b><p>Identifique notificações, multitarefa, pendências mentais e outros hábitos que consomem sua atenção. Escolha os três pontos que merecem atenção primeiro.</p></article>
-<article class="tile bonus-product"><div class="bonus-cover bonus-cover-two"><span>STRATEGY828 BOOKS · BÔNUS 02</span><b>CARTÕES<br>DE LIMITES</b><small>18 FRASES PRONTAS PARA SITUAÇÕES REAIS</small></div><span class="bonus-number">BÔNUS 02 · 7 PÁGINAS</span><b>Cartões de Limites: Como Dizer Não sem Culpa</b><p>18 frases adaptáveis para situações profissionais, familiares e pessoais — incluindo respostas quando alguém insiste.</p></article>
-<article class="tile bonus-product"><div class="bonus-cover bonus-cover-three"><span>STRATEGY828 BOOKS · BÔNUS 03</span><b>RITUAL DE<br>15 MINUTOS</b><small>UM ROTEIRO PARA ENCERRAR O DIA</small></div><span class="bonus-number">BÔNUS 03 · 7 PÁGINAS</span><b>Ritual de 15 Minutos para Encerrar o Dia</b><p>Um passo a passo em cinco etapas para registrar o que foi feito, descarregar a mente e escolher a primeira ação de amanhã.</p></article>
-</div><p class="preview-note">EXCLUSIVO DO COMBO DE R$ 24,90: os três bônus não estão incluídos nas opções de R$ 19,99 e R$ 9,90.</p><a class="btn dark" href="#oferta">Quero o Combo Completo com os 3 bônus →</a></div></section>
+<section class="section cream bonus-section" id="bonus"><div class="wrap">
+<div class="bonus-heading"><span class="bonus-kicker">EXCLUSIVO DO COMBO COMPLETO</span><h2 class="serif">E você ainda recebe <em>3 bônus especiais.</em></h2><p>Ferramentas complementares para colocar em prática o que aprendeu — incluídas no Combo de R$ 24,99.</p></div>
+<div class="bonus-clean-grid">
+<article class="bonus-clean-card"><div class="bonus-clean-top"><span>01</span><small>BÔNUS EXCLUSIVO</small></div><h3>Os 10 Ladrões da sua Energia</h3><p>Um checklist para reconhecer hábitos, interrupções e pendências que drenam sua atenção — e identificar por onde começar.</p></article>
+<article class="bonus-clean-card"><div class="bonus-clean-top"><span>02</span><small>BÔNUS EXCLUSIVO</small></div><h3>Cartões de Limites: Como Dizer Não sem Culpa</h3><p>18 frases adaptáveis para situações profissionais, familiares e pessoais, inclusive quando alguém insiste.</p></article>
+<article class="bonus-clean-card"><div class="bonus-clean-top"><span>03</span><small>BÔNUS EXCLUSIVO</small></div><h3>Ritual de 15 Minutos para Encerrar o Dia</h3><p>Um roteiro simples em cinco etapas para registrar o que foi feito, descarregar a mente e escolher a primeira ação de amanhã.</p></article>
+</div><p class="bonus-eligibility">Os três bônus são liberados exclusivamente na compra do Combo Completo. Não acompanham as opções individuais.</p>
+<div class="center"><a class="btn dark" href="#oferta">QUERO O COMBO COM OS 3 BÔNUS →</a></div>
+</div></section>
 <!-- 5. TRÊS OFERTAS COM CHECKOUTS INDIVIDUAIS -->
 
 <!-- Garantia informada conforme política de reembolso da plataforma -->
