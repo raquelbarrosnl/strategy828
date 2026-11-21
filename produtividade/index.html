@@ -72,6 +72,34 @@
 .combo-bonus-stamp small{display:block;margin-top:3px;font-size:.62rem;line-height:1.2;font-weight:700;letter-spacing:.08em;color:#e9cf9e}
 .offer-card.best .combo-bonus-stamp{margin-top:14px}
 @media(max-width:600px){.combo-bonus-stamp{width:calc(100% - 24px);padding:10px}.combo-bonus-stamp strong{font-size:.76rem}}
+
+/* Seção de identificação: mais ritmo, contraste e hierarquia visual */
+.pain{background:linear-gradient(115deg,#f5f1e8 0%,#f5f1e8 58%,#e9eee7 100%)}
+.pain-grid{grid-template-columns:1.02fr .98fr;gap:34px;align-items:center}
+.pain-side{align-self:center}
+.pain-side-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 14px}
+.pain-side-kicker{font-size:.68rem;letter-spacing:.13em;font-weight:800;color:#8e6231}
+.pain-side-count{font-size:.7rem;font-weight:700;color:#496b60;background:#dce8dd;padding:6px 10px;border-radius:99px}
+.pain-points{display:grid;gap:11px}
+.pain-point{display:grid;grid-template-columns:42px 1fr;gap:13px;align-items:start;padding:17px 18px;border-radius:10px;border:1px solid transparent;box-shadow:0 5px 16px rgba(32,42,41,.045);transition:transform .2s,box-shadow .2s}
+.pain-point:hover{transform:translateX(3px);box-shadow:0 9px 22px rgba(32,42,41,.09)}
+.pain-point-number{display:grid;place-items:center;width:36px;height:36px;border-radius:50%;font:600 1rem var(--serif)}
+.pain-point strong{display:block;font:600 1.08rem/1.3 var(--sans);color:#203735;margin:1px 0 5px}
+.pain-point p{font-size:.87rem;line-height:1.55;color:#59635f;margin:0}
+.pain-point-one{background:#fffdf8;border-color:#e7d8c2}
+.pain-point-one .pain-point-number{background:#f1e3cd;color:#9b6b32}
+.pain-point-two{background:#e7eee7;border-color:#d2dfd2}
+.pain-point-two .pain-point-number{background:#cbdccf;color:#365c4c}
+.pain-point-three{background:#f2e6df;border-color:#e6d1c3}
+.pain-point-three .pain-point-number{background:#e7cbb9;color:#965a3e}
+.pain-side-action{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-top:15px;padding:15px 17px;background:#173c3a;border-radius:9px;color:#fff8ed}
+.pain-side-action span{font-size:.8rem;line-height:1.4;color:#f2e9d9}
+.pain-side-action a{flex:0 0 auto;font-size:.67rem;letter-spacing:.06em;font-weight:800;color:#f1cd8e;border-bottom:1px solid #c49b55;padding-bottom:3px}
+.pain-photo{box-shadow:0 14px 30px rgba(40,43,35,.08)}
+.pain-photo .pain-illustration-caption{background:#fffaf1}
+.pain-photo .pain-illustration-caption span{color:#a96e3f}
+.pain-close{max-width:850px;margin-top:34px}
+@media(max-width:760px){.pain{background:linear-gradient(180deg,#f5f1e8 0%,#edf0e8 100%)}.pain-grid{grid-template-columns:1fr;gap:22px}.pain-side-heading{align-items:flex-start;flex-direction:column;gap:7px}.pain-side-action{align-items:flex-start;flex-direction:column}.pain-side-action a{margin-top:2px}.pain-point{padding:15px}.pain-point strong{font-size:1rem}}
 </style>
 </head>
 
@@ -84,7 +112,11 @@
 <!-- 1. TÍTULO, SUBTÍTULO, IMAGEM E CTA -->
 <section class="hero"><div class="wrap hero-grid"><div class="hero-copy"><div class="eyebrow">E-book + planner prático de 30 dias · Strategy828 Books</div><h1 class="serif">Você dá conta de tudo. <em style="color:#d4b77d">Mas está cansada de nunca conseguir parar?</em></h1><p class="lead">Um percurso prático de 30 dias para reconhecer o que alimenta sua sobrecarga, reorganizar prioridades, estabelecer limites e construir uma rotina mais consciente — sem transformar o autocuidado em outra cobrança.</p><div class="hero-actions"><a class="btn" href="#oferta">Ver as opções e escolher →</a><a class="btn light" href="#recebe">O que vou receber?</a></div><p class="micro">5 arquivos digitais · Acesso imediato após a confirmação do pagamento</p></div><div class="hero-product-stack"><img class="hero-img" src="assets/capa-ebook.png" alt="Capa do e-book A Ansiedade Produtiva"><div class="planner-3d" aria-label="Representação visual do Planner de 30 Dias"><div class="cover"><span>STRATEGY828 BOOKS</span><b>PLANNER<br>DE 30 DIAS</b><svg viewBox="0 0 120 68" aria-hidden="true"><rect x="9" y="5" width="102" height="58" rx="5" fill="#f6f0e4"/><path d="M24 20h72M24 32h72M24 44h55" stroke="#c9b58d" stroke-width="3" stroke-linecap="round"/><path d="m17 19 3 3 5-6m-8 18 3 3 5-6" fill="none" stroke="#b38b4b" stroke-width="2"/></svg><span>PERCEBER · REDUZIR · LIMITAR<br>RECUPERAR · MANTER</span></div></div></div></div></section>
 <!-- 2. RECONHECIMENTO DA DOR -->
-<section class="pain"><div class="wrap"><div class="center"><div class="eyebrow">Talvez você se reconheça aqui</div><h2 class="serif">Você termina o dia. Mas sua cabeça não recebe o aviso.</h2><p class="lead">Você resolve o que aparece. Mas quando finalmente para, a cabeça continua ocupada.</p></div><div class="pain-grid"><div class="pain-illustration pain-photo"><img src="assets/pagina-rotina.png" alt="Mulher sobrecarregada diante do computador, cercada pelas demandas do trabalho e da vida pessoal"><div class="pain-illustration-caption"><span>O CUSTO INVISÍVEL</span><strong>Quando o expediente termina, mas a mente continua ligada.</strong></div></div><ul class="pain-list"><li>Acorda já pensando em tudo o que precisa resolver.</li><li>Passa o dia apagando urgências e deixa o que importa para depois.</li><li>Mesmo no descanso, continua pensando nas tarefas e sente culpa por parar.</li></ul></div><p class="pain-close">Talvez você não precise aprender a fazer mais. <em>Talvez precise parar de carregar tudo como se dependesse de você.</em></p></div></section>
+<section class="pain"><div class="wrap"><div class="center"><div class="eyebrow">Talvez você se reconheça aqui</div><h2 class="serif">Você termina o dia. Mas sua cabeça não recebe o aviso.</h2><p class="lead">Você resolve o que aparece. Mas quando finalmente para, a cabeça continua ocupada.</p></div><div class="pain-grid"><div class="pain-illustration pain-photo"><img src="assets/pagina-rotina.png" alt="Mulher sobrecarregada diante do computador, cercada pelas demandas do trabalho e da vida pessoal"><div class="pain-illustration-caption"><span>O CUSTO INVISÍVEL</span><strong>Quando o expediente termina, mas a mente continua ligada.</strong></div></div><div class="pain-side"><div class="pain-side-heading"><span class="pain-side-kicker">ISSO ESTÁ ACONTECENDO COM VOCÊ?</span><span class="pain-side-count">3 sinais de sobrecarga</span></div><div class="pain-points">
+<div class="pain-point pain-point-one"><span class="pain-point-number">01</span><div><strong>Sua cabeça começa o dia antes de você.</strong><p>Você ainda está na cama e já está repassando compromissos, problemas e tudo o que não pode esquecer.</p></div></div>
+<div class="pain-point pain-point-two"><span class="pain-point-number">02</span><div><strong>Você passa o dia ocupada, mas termina frustrada.</strong><p>As urgências consomem seu tempo. O que realmente importa fica para depois — mais uma vez.</p></div></div>
+<div class="pain-point pain-point-three"><span class="pain-point-number">03</span><div><strong>Seu corpo para. Sua mente continua trabalhando.</strong><p>Mesmo quando existe tempo para descansar, as tarefas continuam na sua cabeça e a culpa não deixa você aproveitar.</p></div></div>
+</div><div class="pain-side-action"><span>Se você se reconheceu nesses sinais, existe um caminho para começar a mudar esse ciclo.</span><a href="#oferta">QUERO CONHECER O MÉTODO <b>→</b></a></div></div></div><p class="pain-close">Talvez você não precise aprender a fazer mais. <em>Talvez precise parar de carregar tudo como se dependesse de você.</em></p></div></section>
 <!-- 3. O QUE VAI RECEBER: RESUMO VISUAL E DIRETO -->
 <section class="section" id="recebe"><div class="wrap"><div class="center section-intro"><div class="eyebrow">O que você vai receber</div><h2 class="serif">Dois materiais. Uma sequência simples: compreender e praticar.</h2><p class="lead">Escolha um material ou reúna os dois no combo.</p></div><div class="receive-grid"><article class="receive-card"><img src="assets/capa-ebook.png" alt="Capa do e-book A Ansiedade Produtiva"><div><span class="visual-tag">72 páginas · CONTEÚDO DIGITAL</span><h3 class="serif">E-book A Ansiedade Produtiva</h3><p>Entenda os padrões de sobrecarga e conheça ferramentas para reorganizar prioridades e limites.</p></div></article><article class="receive-card"><div class="mini-planner" role="img" aria-label="Capa ilustrativa do Planner de 30 Dias"><span>STRATEGY828 BOOKS</span><b>PLANNER<br>DE 30 DIAS</b><i>PERCEBER · REDUZIR<br>LIMITAR · RECUPERAR<br>MANTER</i></div><div><span class="visual-tag">35 páginas · PLANNER DIGITAL</span><h3 class="serif">Planner de 30 Dias</h3><p>Registre observações e acompanhe pequenas mudanças em cinco fases práticas.</p></div></article></div><div class="center" style="margin-top:24px"><a class="btn dark" href="#oferta">Ver as três opções →</a></div></div></section>
 <!-- 4. BENEFÍCIOS PRÁTICOS -->
